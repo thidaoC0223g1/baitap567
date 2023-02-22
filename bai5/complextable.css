@@ -1,0 +1,12 @@
+body { padding: 50px;}
+table {border-collapse: collapse; width:100%;}
+th,td {padding: 10px; border: 1px solid black;}
+th { font-family: Arial, sans-serif;
+ font-size: 15px;
+text-align: center;
+padding: 5px;
+    background-color: orange;
+}
+td {font-family: Times New Roman, sans-serif;
+    text-align: center;
+}

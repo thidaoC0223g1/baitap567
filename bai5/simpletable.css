@@ -1,0 +1,7 @@
+table {font-family: Arial,sans-serif;
+border-collapse:collapse;
+width:100%;}
+th,td {border:1px solid black;
+text-align:left;
+padding:2px;}
+tr:nth-child(odd) { background: lightgrey;}
