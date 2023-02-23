@@ -1,0 +1,8 @@
+table {border: 1px solid black;
+margin: auto;}
+th { background-color: red;
+    color: white;}
+td {
+    color:blue;
+}
+.mot {color: red;}
