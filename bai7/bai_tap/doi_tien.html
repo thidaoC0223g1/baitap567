@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Money exchange</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th align="center">Amount</th>
+        <th align="left">From Curency</th>
+        <th align="left">To Curency</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><input type="number" id="giatrivao" size="30"></td>
+        <td><select id="from">
+            <option value="vnd">VND</option>
+            <option value="usd">USD</option>
+        </select></td>
+        <td><select id="to">
+            <option value="usd">USD</option>
+            <option value="vnd">VND</option>
+        </select></td>
+        <td><button type="button" onclick="myFunction();">convert</button></td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+</table>
+<p id="message"></p>
+<script>
+function myFunction() {
+    let gtv= document.getElementById('giatrivao').value;
+    let from1= document.getElementById('from').value;
+    let to1= document.getElementById('to').value;
+
+    if (from1 === "vnd" && to1 === "usd") {
+     let gtr= gtv/23000;
+        document.getElementById('message').innerHTML=  'ket qua =' +gtr;
+    }
+    else if ( from1 === "vnd" && to1==="vnd"){
+        document.getElementById('message').innerHTML= 'ket qua =' +gtv;
+    }
+    else if ( from1 === "usd" && to1 ==="vnd") {
+        document.getElementById('message').innerHTML= 'ket qua =' +(gtv*23000);
+    }
+    else {
+        document.getElementById('message').innerHTML='ket qua =' +gtv;
+    }
+}
+</script>
+</body>
+</html>
